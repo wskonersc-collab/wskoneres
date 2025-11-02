@@ -1,0 +1,112 @@
+NotRsc-exe/
+│
+├─ index.html
+├─ style.css
+└─ images/
+     └─ logo.png  (ตัวอย่างโลโก้)
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>NotRsc exe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="NotRsc exe Logo" class="logo">
+    <h1>NotRsc exe</h1>
+    <nav>
+      <a href="#about">เกี่ยวกับเรา</a>
+      <a href="#services">บริการ</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>ยินดีต้อนรับสู่ NotRsc exe</h2>
+    <p>เว็บไซต์แนะนำตัว/ธุรกิจของคุณ</p>
+  </section>
+
+  <section id="about">
+    <h2>เกี่ยวกับเรา</h2>
+    <p>เรามุ่งเน้นการให้บริการคุณภาพสูง พร้อมทีมงานมืออาชีพ</p>
+  </section>
+
+  <section id="services">
+    <h2>บริการของเรา</h2>
+    <div class="service-list">
+      <div class="service-item">บริการ 1</div>
+      <div class="service-item">บริการ 2</div>
+      <div class="service-item">บริการ 3</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>Email: contact@notrsc.info</p>
+    <p>Tel: 012-345-6789</p>
+  </section>
+
+  <footer>
+    <p>© 2025 NotRsc exe</p>
+  </footer>
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: #900000;
+  padding: 20px;
+  text-align: center;
+}
+header .logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+header h1 { margin: 0; color: #fff; }
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover { color: #ff0000; }
+
+.hero {
+  background: #330000;
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero h2 { color: #ff0000; font-size: 2em; }
+
+section { padding: 60px 20px; text-align: center; }
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.service-item {
+  background: #900000;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+.service-item:hover { transform: scale(1.05); }
+
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
